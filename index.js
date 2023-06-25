@@ -34,6 +34,10 @@ function createCommands(){
     ]
 }
 
+app.get("/", (req, res) => {
+    res.send("Welcome to CommandAPI");
+})
+
 app.get("/getcommands", async (req, res) => {
     try {
         let objects = await Command.find({});
