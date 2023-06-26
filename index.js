@@ -35,7 +35,7 @@ function createCommands(){
 }
 
 app.get("/", (req, res) => {
-    res.send("Welcome to CommandAPI");
+    res.render("index.html");
 })
 
 app.get("/getcommands", async (req, res) => {
