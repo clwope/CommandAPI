@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CommandAPI</title>
 </head>
+
+<style>
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: aquamarine;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+        color: brown;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    li{
+        margin-bottom: 30px;
+        color: olive;
+    }
+</style>
+
 <body>
     <h1>Welcome to CommandAPI</h1>
     <h2>url: https://commandapi.onrender.com</h2>
     <ul>
         <li>/getcommands: get all the commands</li>
         <li>/getcommands/id: get one specific command</li>
-        <li>/searchcommands?name=command_name</li>
+        <li>/searchcommands?name=command_name: search for a command with name</li>
     </ul>
 </body>
 </html>
