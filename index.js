@@ -6,6 +6,7 @@ let CatchAsync = require("./utils/CatchAsync");
 let ExpressError = require("./utils/ExpressError");
 let mongoose = require("mongoose");
 let Command = require("./models/command");
+let path = require("path");
 
 async function main() {
     await mongoose.connect(process.env.DB_URL);
@@ -35,7 +36,7 @@ function createCommands(){
 }
 
 app.get("/", (req, res) => {
-    res.send("Welcome to CommandAPI");
+    res.sendFile(path.join(__dirname + "/index.html"));
 })
 
 app.get("/getcommands", async (req, res) => {
